@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+/* Variables generales */
+/* Variables que hacen referencia a las "cajas" de productos */
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+body a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+body header {
+  background-color: rgb(168, 15, 15);
+  height: 45px;
+  width: 100%;
+}
+body header p {
+  height: 100%;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bienvenida {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 45px);
+}
+.bienvenida .info {
+  position: relative;
+  z-index: 2;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "a1 a1" "a2 a3";
+}
+.bienvenida .info div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bienvenida .info #info__nombre {
+  grid-area: a1;
+}
+.bienvenida .info #info__nombre h1 {
+  font-weight: 800;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: transparent;
+  text-transform: uppercase;
+  font-size: calc(50px + 5vw);
+  font-family: "Poppins";
+  font-style: italic;
+}
+.bienvenida .info #info__msg {
+  grid-area: a2;
+  margin-left: 50px;
+}
+.bienvenida .info #info__msg p {
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  font-size: calc(10px + 1.5vw);
+  text-align: left;
+}
+.bienvenida .info #info__msg p span {
+  color: red;
+}
+.bienvenida video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,104 @@
+@import "./variables/variables.scss";
+
+*{
+    font-family: $font-family;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    
+    color: $color_font;
+
+    text-align: center;
+}
+
+body{
+    background-color: $background_color;
+    a{
+        text-decoration: none;
+        color: $color_font;
+    }
+    header{
+    background-color: $background_header;
+    height: $height_nav;
+    width: 100%;
+    
+    p{
+        height: 100%;
+        color: white;
+
+        font-weight: $weight_bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+}
+
+.bienvenida{
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - $height_nav);
+
+    .info{
+        position: relative;
+        z-index: 2;
+
+        height: 80vh;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "a1 a1"
+                             "a2 a3";
+
+        div{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #info__nombre{
+            grid-area: a1;
+            
+            h1{
+                font-weight: 800;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 1px rgb(255, 255, 255);
+                color: transparent;
+                text-transform: uppercase;
+                font-size:calc(50px + 5vw);
+                font-family: 'Poppins';
+                font-style: italic;
+            }
+        }
+        #info__msg{
+            grid-area: a2;
+            margin-left: 50px;
+            p{
+                font-weight: $weight_bold;
+                color: white;
+                text-transform: uppercase;
+                font-size: calc(10px + 1.5vw);
+                text-align: left;
+
+                span{
+                    color: red;
+                }
+            }
+        }
+    }
+
+    video{
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

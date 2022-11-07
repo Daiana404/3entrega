@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link id="icon-hoja" rel="shortcut icon" href="../scss/img/icon/hojas.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    
+
+    
+  
+
+
+    <title>PlantaX</title>
+
+</head>
+<body>
+    <header>
+        <p>
+            super ofertas | nuevas promociones | envíos a todo el país
+        </p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PLANTAX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#secciones" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./cactus.html">Cactus</a></li>
+                  <li><a class="dropdown-item" href="./zuculentas.html">Zuculentas</a></li>
+                  <li><a class="dropdown-item" href="./macetas.html">Macetas</a></li>
+                  <li><a class="dropdown-item" href="./terrarios.html">Terrarios</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./cuidados.html">Cuidados</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./preguntas.html">Preguntas</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <main>
+        <!-- tres secciones -->
+        <section class="bienvenida">
+            <div class="info">
+                <div id="info__nombre">
+                    <h1>plantax</h1>
+                </div>
+                <div id="info__msg">
+                     <p>[Mensaje destacado] Muy llamativo para <span>todos</span> Más del mensaje informativo...</p>
+                </div>
+            </div>
+
+            <video class="bienvenida__video" muted autoplay loop>
+                <source src="../scss/video/fondo-2.mp4" type="video/mp4" >
+                <!-- https://www.youtube.com/watch?v=npA-2ONUqOc -->
+                <!-- https://www.youtube.com/watch?v=KaKMugW8Bqc -->
+            </video>
+        </section>
+
+        <section id="secciones">
+            <div id="grid-seccion">
+                <div id="seccion-1">
+                    <a href="./zuculentas.html">
+                        <div>zuculentas</div>
+                    </a>
+                </div>
+
+                <div id="seccion-2">
+                    <a href="./cactus.html">
+                        <div>cactus</div>
+                    </a>
+                </div>
+
+                <div id="seccion-3">
+                    <a href="./macetas.html">
+                        <div>macetas</div>
+                    </a>
+                </div>
+
+                <div id="seccion-4">
+                    <a href="./terrarios.html">
+                        <div>terrarios</div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="destacados">
+
+            <p>Productos Destacados</p>
+
+            <div class="box-productos">
+                <div class="box">
+                    <!-- imagen del producto -->
+                    <div class="box-imagen"><a href="#"><div class="div-1"></div></a></div>
+                    <!-- breve descripción -->
+                    <div class="box-info">
+                        <p class="box-info__producto">Producto uno</p>
+                        <span class="box-precio">
+                            $3300
+                        </span>
+                        <p> <span>3</span> cuotas sin interés de <span>$1100</span></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- imagen del producto -->
+                    <div class="box-imagen"><a href="#"><div class="div-2"></div></a></div>
+                    <!-- breve descripción -->
+                    <div class="box-info">
+                        <p class="box-info__producto">Producto dos</p>
+                        <span class="box-precio">
+                            $3300
+                        </span>
+                        <p> <span>3</span> cuotas sin interés de <span>$1100</span></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- imagen del producto -->
+                    <div class="box-imagen"><a href="#"><div class="div-3"></div></a></div>
+                    <!-- breve descripción -->
+                    <div class="box-info">
+                        <p class="box-info__producto">Producto tres</p>
+                        <span class="box-precio">
+                            $3300
+                        </span>
+                        <p> <span>3</span> cuotas sin interés de <span>$1100</span></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- imagen del producto -->
+                    <div class="box-imagen"><a href="#"><div class="div-4"></div></a></div>
+                    <!-- breve descripción -->
+                    <div class="box-info">
+                        <p class="box-info__producto">Producto cuatro</p>
+                        <span class="box-precio">
+                            $3300
+                        </span>
+                        <p> <span>3</span> cuotas sin interés de <span>$1100</span></p>
+                    </div>
+                </div>
+                
+            
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="secciones-footer"> <!-- todos los html que van a haber -->
+            <ul>
+                <li><a href="../html/zuculentas.html">zuculentas</a></li>
+                <li><a href="../html/cactus.html">cactus</a></li>
+                <li><a href="../html/terrarios.html">terrarios</a></li>
+                <li><a href="../html/macetas.html">macetas</a></li>
+                <li><a href="../html/cuidados.html">cuidados</a></li>
+                <li><a href="../html/preguntas.html">preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+        
+
+        <div id="contacto-footer">
+            <ul>
+                <li>
+                    <img class="footer-icon" src="../img/icon/instagram.svg" alt="">
+                    <a href="#">instagram</a></li>
+                <li>
+                    <img class="footer-icon" src="../img/icon/whatsapp.svg" alt="">
+                    <a href="#">whatsapp</a></li>
+                <li>
+                    <img class="footer-icon" src="../img/icon/marcador.svg" alt="">
+                    <a href="#">direccion</a></li>
+            </ul>
+        </div>  
+    
+        <p id="creditos">Desarrollado por <!-- © Copyright --> <a href="#">Polo Daiana</a> - 2022</p>
+
+        <p id="ley">
+            Defensa de las y los consumidores. Para reclamos <a href="https://autogestion.produccion.gob.ar/consumidores">ingrese aquí</a>.
+
+        </p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+ 
+
+</body>
+</html>
